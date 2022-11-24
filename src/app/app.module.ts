@@ -3,15 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
 import { RatingModule } from 'ng-starrating';
-import { SearchComponent } from './search/search.component';
-import { FormsModule } from '@angular/forms';
-import { TagsComponent } from './tags/tags.component';
-import { FoodPageComponent } from './food-page/food-page.component';
-import { CartPageComponent } from './cart-page/cart-page.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TagsComponent } from './components/tags/tags.component';
+import { FoodPageComponent } from './components/food-page/food-page.component';
+import { CartPageComponent } from './components/cart-page/cart-page.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SearchComponent } from './components/search/search.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
+import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { AdminLoginComponent } from './components/admin-login/admin-login.component';
+import { ChangePasswordComponent } from './components/admin-change-password/change-password.component';
+import { AdminAddFoodComponent } from './components/admin-add-food/admin-add-food.component';
+import { AdminAllFoodsComponent } from './components/admin-all-foods/admin-all-foods.component';
+
+
+
 
 
 
@@ -24,13 +32,19 @@ import { NotFoundComponent } from './not-found/not-found.component';
     TagsComponent,
     FoodPageComponent,
     CartPageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AdminHomeComponent,
+    AdminLoginComponent,
+    ChangePasswordComponent,
+    AdminAddFoodComponent,
+    AdminAllFoodsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RatingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
